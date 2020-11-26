@@ -1,0 +1,24 @@
+<div class="container login">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="wrapper fadeInDown mt-50">
+          <div id="formContent">
+            <!-- Icon -->
+            <div class="fadeIn first login-logo">
+              <img src="assets/logo.png" id="login-logo" alt="login-logo" />
+            </div>
+            <!-- Login Form -->
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm)">
+              <input type="text" id="login" class="fadeIn second" name="email" placeholder="Email" formControlName="email">
+              <label class="text-danger" *ngIf="!loginForm.get('email').valid && loginForm.get('email').touched">Enter valid email: Test@test.com</label>
+              <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" formControlName="password">
+              <label class="text-danger" *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">Enter valid password: Test123</label><br>
+              <input type="submit" class="fadeIn fourth" value="Log In">
+              <label class="text-danger" *ngIf="error">Enter Email id and password. Both is mandatory</label>
+              <p [ngStyle]="{'color': '#ccc'}">&copy; 2020-2021 | Shani</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,32 @@
+.card-title {
+    color: #0c84c7;
+    font-size: 18px !important;
+    font-weight: 500;
+}
+.products{
+    padding:50px 0;
+    margin-left:20px;
+}
+.prate{
+    color: green;
+    font-weight: 700;
+    font-size:14px;
+}
+.img-container img{
+    height: 16em;
+    float: left;
+}
+
+.card-body button{
+    background-image: linear-gradient(to left,#2AAAE1, #0C84C7);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.38);
+    border-radius: 5px 5px 5px 5px;
+}
+.card-body button:hover{
+    background-image: linear-gradient(to right,#2AAAE1, #0C84C7);
+}

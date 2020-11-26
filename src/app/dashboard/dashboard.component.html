@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="welcome">
+        <h2>Welcome {{Username}} !</h2>
+        <button type="button" class="btn btn-outline-light addbtn"  (click)="addProduct(template)">Add Product</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3 products" *ngFor="let products of Product; index as i">
+        <div class="card text-center" style="width: 18rem;">
+          <div class='img-container'>
+            <img class="card-img-top img-fluid" src="assets/fruits.png" alt="{{products.alt}}">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{products.Pname}}</h5>
+            <p class="card-text">ID: #{{i}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Price: <span class="prate">₹ {{products.Prate}}</span></li>
+            <li class="list-group-item">Quantity: {{products.Pquantity}}</li>
+          </ul>
+          <div class="card-body">
+            <button class="card-link" (click)=deleteProducts(i)>Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- modal content -->
+<ng-template #template> 
+    <div class="modal-header"> 
+      <h2 class="modal-title pull-left">Add Product</h2>
+    </div>  
+    <div class="modal-body">
+        <form [formGroup]="addForm" id="addProductForm" (ngSubmit)="onSubmit()">
+          <label>Add Title</label>
+          <input type="text" placeholder="Ex: Fruits name" formControlName="Pname"> 
+          <!-- <label class="text-danger" *ngIf="Pname.touched && Pname.invalid && Pname.errors.required">
+            Title is required
+          </label> -->
+          <label>Add Price</label>
+          <input type="text" placeholder="Ex: 20" formControlName="Prate"> 
+          <label>Add Quantity</label>
+          <input type="text" placeholder="Ex: 1" formControlName="Pquantity"> 
+          <input type="submit" value="Add">
+        </form>
+    </div>  
+    <div class="modal-footer">  
+      <button type="button" class="btn btn-secondary" (click)="modalRef.hide()">Close</button>  
+    </div>  
+</ng-template>  

@@ -1,0 +1,68 @@
+.welcome{
+    background-image: linear-gradient(to right,#2AAAE1, #1981b9);
+    color: #fff;
+    padding: 20px 20px 5px;
+    margin: 5% 0;
+    position: relative;
+}
+.addbtn{
+    position: absolute;
+    right: 15px;
+    top: 25%;
+}
+
+/* product panel css */
+.card-title {
+    color: #0c84c7;
+    font-size: 18px !important;
+    font-weight: 500;
+}
+.products{
+    padding:50px 0;
+    margin-left:20px;
+}
+.prate{
+    color: green;
+    font-weight: 700;
+    font-size:14px;
+}
+.img-container img{
+    height: 16em;
+    float: left;
+}
+
+.card-body button{
+    background-image: linear-gradient(to left,#e12a67, #c70c0c);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.38);
+    border-radius: 5px 5px 5px 5px;
+}
+.card-body button:hover{
+    background-image: linear-gradient(to right,#e12a67, #c70c0c);
+}
+
+/* form design */
+input[type="text"] {
+    border-bottom: 1px solid #0c84c7;
+    padding: 5px;
+    margin: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input[type="submit"] {
+    background-image: linear-gradient(to right,#2AAAE1, #1981b9);
+    padding: 5px 25px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 15px;
+}
+input[type="submit"]:hover {
+    background-image: linear-gradient(to left,#2AAAE1, #1981b9);
+    outline: none;
+}

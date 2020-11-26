@@ -1,0 +1,26 @@
+.homeBtn{
+    background-image: linear-gradient(to left,#2AAAE1, #0C84C7);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.38);
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 50px;
+}
+.homeBtn:hover{
+    background-image: linear-gradient(to right,#2AAAE1, #0C84C7);
+}
+.error{
+    margin: 10% 0;
+}
+.error404{
+    font-size: 200px;
+    margin:12% 0 6%;
+}
+.four{
+  background: -webkit-linear-gradient(#2AAAE1,#2e17b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

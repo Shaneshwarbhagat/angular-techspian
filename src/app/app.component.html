@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <img class="navbar-brand" srcset="assets/logo.png"/>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item  ">
+              <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]={exact:true} routerLink="/dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item  ">
+              <a class="nav-link" routerLinkActive="active" routerLink="/login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
