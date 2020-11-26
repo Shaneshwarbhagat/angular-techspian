@@ -1,3 +1,7 @@
+#about project
+
+In this Project have created router with two tabs dashboard and login. User has to login in order to get into dashboard. Angular forms is used for validating and sending form data. Services used to get centralised code. Routing is done using angular router. when user get access to dashboard they can add products from mdal popup anf that product will be added in dasboard as well. Also user can delete products by clicking delete button in each product items. All data is stored in array of object in services.
+
 # TestShani
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
